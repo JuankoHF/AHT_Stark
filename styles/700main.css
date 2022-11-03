@@ -1,0 +1,25 @@
+.logo {
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+.dayDate_continer {
+    padding-left: 50px;
+    
+}
+
+.prom_day {
+    right: calc(50% + 60px);   
+}
+.date_continer {
+   display: flex;
+   justify-content: space-between;
+}
+.accumulated {
+   position: relative;
+   justify-content: flex-start;
+}
+.mont_acumulated {
+    position: absolute;
+    top: -77px;
+}

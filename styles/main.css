@@ -1,0 +1,260 @@
+:root {
+    --primaryStark: #7c7979;
+    --total_black: #000000;
+    --secunryStark: #bebcbc;
+    --textStark: #ffff;
+    --usercolor: rgb(17, 3, 171);
+    --onDate: rgb(16, 186, 62);
+    --back_main: #F2F3DC;
+    --badDate: #d02626;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+.dayDate_continer {
+    width: 100%;
+    height: auto;
+    padding: 98px 30px 16px 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    background-color: rgb(246, 246, 106);
+}
+.prom_day {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+}
+.prom_day label {
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+.dayDate_continer input {
+    width: 110px;
+    height: 24px;
+    border-color: var(--secunryStark);
+    text-align: center;
+   
+}
+.date_continer {
+    width: 100%;
+    background-color: var(--back_main);
+    padding: 20px 10px;
+}
+
+/* seccion de llamadas diarias */
+
+.oneDay {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+   
+}
+.oneDay ul {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: solid 2px var(--primaryStark);
+    list-style: none;
+    padding-left: 16px;
+    padding-right: 24px;
+}
+.oneDay ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.oneDay ol {
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-top: 12px;
+    justify-items: end;
+    
+}
+.number {
+    width: 8px;
+}
+
+.oneDay ol li {
+    display: flex;
+    margin-top: 4px;
+    
+}
+.input_continer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 50px;
+    
+}
+.input_continer input {
+    width: 60px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.goodBadGreen {
+    background-color: var(--onDate);
+    font-weight: bold;
+    color: #000000;
+}
+.goodBadRed {
+    background-color: var(--badDate);
+    font-weight: bold;
+    color: #000000;
+}
+.button_next {
+    width: 120px;
+    height: 28px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: calc(50% - 60px);
+    background-color: rgb(246, 246, 106);
+    font-weight: bold;
+    border-radius: 2px;
+
+}
+
+/* seccion de acumulado */
+
+.accumulated {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mod  {
+    margin: 0 auto;
+}
+.mont_acumulated {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.mont_acumulated label {
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+.show_mond {
+    width: 110px;
+    height: 24px;
+    border-color: var(--secunryStark);
+    text-align: center;
+}
+.accumulated ul {
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--primaryStark);
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.accumulated ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.accumulated ol {
+    list-style: none;
+    width: 80%;
+    height: auto;
+    margin-top: 12px;
+    margin-bottom: 32px;
+
+}
+.continer_dateAHT {
+    width: 100%;
+    height: 24px;
+    max-width: 450px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.continer_dateAHT1 {
+    width: 100%;
+    height: 24px;
+    max-width: 450px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.date_acum {
+    width: 110px;
+    height: 24px;
+    text-align: center;
+}
+.aht_acum {
+    width: 110px;
+    height: 24px;
+    text-align: center; 
+}
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--primaryStark);
+}
+.content {
+    width: 90%;
+    max-width: 480px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 16px;
+   
+}
+.content h2{
+    color: var(--back_main);
+    margin-right: 12px;
+    margin-bottom: 4px;
+    font-size: 1.0rem;
+    letter-spacing: 1.3px;
+    opacity: 0.8; 
+}
+.signature p {
+    color: var(--back_main);
+    margin-right: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    opacity: 0.8; 
+}
+.jnk {
+    width: 30px;
+    height: 15px;
+    background-color: rgb(246, 246, 106);
+    margin-left: calc(50% - 20px);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
